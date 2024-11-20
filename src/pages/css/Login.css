@@ -1,0 +1,145 @@
+.login-signup {
+  width: auto;
+  height: 85vh;
+  background-color: #3c352f;
+  padding: 100px;
+  position: relative;
+}
+
+.login-signup-con {
+  width: 580px;
+  height: 600px;
+  background-color: #e6e4d8;
+  margin: auto;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-signup-con h1 {
+  margin: 20px 0px;
+  font-size: 28px;
+  color: #3c352f;
+  text-align: center;
+}
+
+.signup-feild {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  margin-top: 30px;
+}
+
+.signup-feild input {
+  height: 72px;
+  padding-left: 20px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  color: #5c5c5c;
+  font-size: 13px;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.signup-feild input:focus {
+  border-color: #3c352f;
+}
+
+.login-signup-con button {
+  width: 100%;
+  height: 72px;
+  color: white;
+  background-color: #cfa6a0;
+  border: none;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-signup-con button:hover {
+  background-color: #b08b81;
+}
+
+.login {
+  margin-top: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.login span {
+  color: chocolate;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-signup-agree {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+  color: #5c5c5c;
+  font-size: 13px;
+  font-weight: 500;
+}
+.login-img img {
+  max-width: 500px;
+  position: relative;
+  bottom: 200px;
+  right: 390px;
+}
+
+@media (max-width: 1280px) {
+  .login-signup {
+    padding-top: 50px;
+  }
+  .login-signup-con {
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+  }
+  .login-signup-con h1 {
+    margin: 10px auto;
+  }
+  .signup-feild {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .signup-feild input {
+    height: 65px;
+    width: 93%;
+  }
+  .login-signup-con button {
+    width: 100%;
+  }
+  .login {
+    font-size: 16px;
+  }
+  .login-signup-agree {
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .login-signup-con {
+    padding: 20px 30px;
+  }
+  .login-signup-con h1 {
+    font-size: 24px;
+  }
+  .signup-feild {
+    margin-top: 20px;
+  }
+  .signup-feild input {
+    height: 50px;
+  }
+  .login-signup-con button {
+    height: 50px;
+    font-size: 16px;
+  }
+}

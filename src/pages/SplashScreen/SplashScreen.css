@@ -1,0 +1,41 @@
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3c352f;
+  flex-direction: column;
+}
+
+.welcome-pic {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  animation: bounce 2s infinite;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.welcome-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo-pic {
+  margin: 30px auto;
+  max-width: 70%;
+  max-height: 20%;
+}

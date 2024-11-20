@@ -1,0 +1,105 @@
+.character-card {
+  background-color: #3c3530;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+}
+
+.character-card-image {
+  margin-bottom: 15px;
+}
+
+.character-card-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid #408093;
+}
+
+.character-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #408093;
+}
+
+.character-species,
+.character-status,
+.character-id {
+  font-size: 1rem;
+  color: #d3d3d3;
+  margin-bottom: 10px;
+}
+
+.like-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #408093;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.like-btn.liked {
+  background-color: #ad6d72;
+  transform: scale(1.05);
+}
+
+.like-btn:hover {
+  background-color: #255d64;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .character-card {
+    width: 220px;
+  }
+
+  .character-card-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .character-name {
+    font-size: 1.3rem;
+  }
+
+  .like-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .character-card {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .character-card-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .character-name {
+    font-size: 1.1rem;
+  }
+
+  .like-btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

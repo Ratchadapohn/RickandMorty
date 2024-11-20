@@ -1,0 +1,151 @@
+.liked-items-page {
+  background-color: #f4f4f9;
+  padding: 50px 20px;
+  max-height: 300vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.liked-items-header {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.liked-items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.liked-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.liked-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.liked-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #408093;
+}
+
+.liked-item-name {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.empty-message {
+  font-size: 1.5rem;
+  color: #888;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.liked-top {
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #3c352f;
+}
+
+.liked-top img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .liked-items-page {
+    padding: 20px 10px;
+  }
+
+  .liked-items-header {
+    font-size: 2rem;
+  }
+
+  .liked-items-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .liked-item {
+    margin: 15px 0;
+  }
+
+  .liked-item-name {
+    font-size: 1rem;
+  }
+
+  .liked-top {
+    height: 80px;
+  }
+
+  .liked-top img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 800px) {
+  .liked-items-page {
+    padding: 10px 10px;
+  }
+
+  .liked-items-header {
+    font-size: 2rem;
+  }
+
+  .liked-items-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .liked-item {
+    margin: 15px 0;
+  }
+
+  .liked-item-name {
+    font-size: 1rem;
+  }
+
+  .liked-top {
+    height: 80px;
+  }
+
+  .liked-top img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1024px) {
+  .liked-items-page {
+    padding: 40px 15px;
+  }
+
+  .liked-items-header {
+    font-size: 2.2rem;
+  }
+
+  .liked-items-list {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .liked-item {
+    margin: 20px 0;
+  }
+}
